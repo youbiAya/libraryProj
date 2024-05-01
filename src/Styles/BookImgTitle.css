@@ -1,0 +1,15 @@
+.BookImage {
+    max-width: 90%;
+    max-height: 110%;
+    
+  }
+  .BookTitle {
+    font-size: 13px;
+    position: absolute;
+    top:  90px;
+    right: 5px;
+    text-align: center;
+    color: rgb(47, 30, 1);
+      width: 100%;
+      
+  }
