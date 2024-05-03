@@ -26,7 +26,7 @@ app.post('/api/get', authenticate, (req, res) => {
     const { user_id } = req.session.user;
     const { favorite_id, book_id } = req.body;
   
-    const sql = 'INSERT INTO favorite (FAVORITE_ID, BOOK_ID, USER_ID) VALUES (?, ?, ?)';
+    const sql = 'INSERT INTO FavoritBook (favoriteID, bookID, userID) VALUES (?, ?, ?)';
     connection.query(sql, [user_id, favorite_id, book_id], (error, results) => {
       if (error) {
         console.error('Error inserting favorite:', error);
